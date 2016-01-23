@@ -1,0 +1,22 @@
+html,body{
+    min-height:100%;
+}
+
+body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    font-size:14px;
+}
+
+#wrap{
+	padding-top:20px;
+	width:600px;
+	margin:0 auto;
+}
+
+@media screen and (max-width:600px) {
+	#wrap{
+		width:100%;
+	}
+}
+
