@@ -146,11 +146,13 @@ const ListOfGrouped = ({list}) => {
     let prevDate = null;
 
     const groupedByComment = list.reduce((map, item) => {
-        if (!map.has(item.comment)) {
-            map.set(item.comment, moment.duration(0, 'hours'));
+        const comment = item.comment.trim().toLocaleLowerCase();
+
+        if (!map.has(comment)) {
+            map.set(comment, moment.duration(0, 'hours'));
         }
 
-        const duration = map.get(item.comment);
+        const duration = map.get(comment);
         if (prevDate) {
             duration.add(
                 moment(prevDate).diff(item.time)
