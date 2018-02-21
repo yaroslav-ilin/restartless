@@ -1,0 +1,11 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-react"],
+    "jsRules": {},
+    "rules": {
+      "quotemark": [true, "single"],
+      "object-literal-sort-keys": false,
+      "space-before-function-paren": [true, "always"]
+    },
+    "rulesDirectory": []
+}
